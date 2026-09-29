@@ -13,3 +13,80 @@ td, th {
 tr:nth-child(even) {
 	background-color: #dddddd;
 }
+
+.blockForm {
+    width: 1450px;
+    height: 100px;
+    background: linear-gradient(135deg, #1E8449, #8FDD8A);
+    margin: 150px auto;
+    border-radius: 15px;
+    border: 1px solid #DCE7D2;
+    display: flex;
+  	align-items: center;      /* центрирует форму по вертикали */
+  	justify-content: center;  /* центрирует по горизонтали, если нужно */
+  	min-height: 100%;
+}
+
+.employeesForm {
+	display: flex;
+}
+
+.employeesInput {
+    width: 135px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #1E8449;
+    font-family: Ariel, sans-serif;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    margin: 0 10px 0 10px;
+    outline: none;
+  	transition: border-color .2s;
+}
+
+.employeesInput:focus{
+  outline: none;
+  border-color: #1E8449;
+  color: #fff;                 /* текст светлый, т.к. фон станет тёмным */
+  animation: fillIn .4s ease .5s forwards;
+}
+
+@keyframes fillIn{
+  from{ background: #fff }
+  to{ background: linear-gradient(135deg, #1E8449, #8FDD8A) }
+}
+
+.employeesBtnSubmit:hover {
+	border: 1px solid #8FDD8A;
+	background-color: #fff;
+	color: #1E8449;
+}
+
+.employeesBtnSubmit:active {
+	border: 1px solid #8FDD8A;
+	background-color: #fff;
+	color: #1E8449;
+}
+
+.employeesLabel {
+	font-family: Ariel, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    top: 6px;
+    left: -3px;
+}
+
+.employeesSelect {
+	font-family: Ariel, sans-serif;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid #1E8449;
+}
+
+.employeesSelect option{
+  background: #fff;
+  color: #12301F;
+  padding: .5rem;
+}
+
